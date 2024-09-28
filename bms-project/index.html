@@ -13,8 +13,14 @@
       tailwind.config = {
         theme: {
           extend: {
+            screens: {
+              "hp": "430px",
+            },
             colors: {
               primary: "#2c5282",
+              ungu: "#164e64",
+              biru: "#1199b6",
+              background : "#fbf0de ",
             },
           },
         },
@@ -37,27 +43,27 @@
 
   <header>
     <nav
-      class="fixed top-5 left-1/2 transform -translate-x-1/2 bg-primary rounded-full max-w-2xl px-6 py-3 z-50 shadow-lg"
+      class="fixed top-5 left-1/2 transform -translate-x-1/2 bg-ungu rounded-full max-w-2xl px-6 py-3 z-50 shadow-lg"
     >
-      <ul class="flex justify-between font-bold text-2xl">
+      <ul class="flex justify-between font-semibold text-xl hp:text-xl">
         <li>
           <a
             href="#home"
-            class="text-white px-4 py-2 rounded-full hover:bg-white hover:bg-opacity-20 transition-colors duration-300"
+            class="text-white px-4 py-2 rounded-full hover:text-blue-300 hover:bg-white hover:bg-opacity-20 transition-colors duration-300"
             >Home</a
           >
         </li>
         <li>
           <a
             href="#team"
-            class="text-white px-4 py-2 rounded-full hover:bg-white hover:bg-opacity-20 transition-colors duration-300"
+            class="text-white px-4 py-2 rounded-full hover:text-blue-300 hover:bg-white hover:bg-opacity-20 transition-colors duration-300"
             >Team</a
           >
         </li>
         <li>
           <a
             href="#project"
-            class="text-white px-4 py-2 rounded-full hover:bg-white hover:bg-opacity-20 transition-colors duration-300"
+            class="text-white px-4 py-2 rounded-full hover:text-blue-300 hover:bg-white hover:bg-opacity-20 transition-colors duration-300"
             >Activity</a
           >
         </li>
@@ -73,38 +79,32 @@
   </header>
 
   <body>
-
-    <div class="container mx-auto px-5">
-      <section
-        id="home"
-        class="flex flex-col md:flex-row items-center justify-between mt-16"
-      >
-        <div class="md:w-1/2 mb-8 md:mb-0">
-          <h1
-            class="text-5xl md:text-6xl font-bold mb-2 text-primary font-custom font-2xl"
-          >
-            Group <span class="text-black">14.</span>
-          </h1>
-          <p class="text-2xl text-gray-600">Four People, One Vision</p>
-        </div>
-        <div class="md:w-1/2">
+    <div class="bg-background mx-auto px-5 ">
+      <section id="home" class="mt-32 relative pt-20">
+        <!-- <div
+          class="absolute -top-40 -left-40 w-96 h-96 bg-blue-200 rounded-full opacity-50 z-0"
+        ></div> -->
+        <div class="relative z-10 pt-10">
+          <h2 class="text-5xl font-bold mb-4 text-center">
+            <span class="text-biru font-custom text-8xl">BMS</span> Project.
+          </h2>
+          <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+            Building skills, shaping the future. This is all the work we did during BMS.
+          </p>
           <img
             src="/public/bms.png"
             alt="Group photo"
-            class="w-full h-auto rounded-lg shadow-lg"
+            class="w-300 h-auto rounded-lg shadow-lg mx-auto"
           />
         </div>
         <div class="h-32"></div>
       </section>
       
       <section id="team" class="mt-32 relative pt-20"></section>
-        <div
-          class="absolute -bottom-20 -right-20 w-96 h-96 bg-blue-200 rounded-full opacity-50 z-0"
-        ></div>
-        <div class="relative z-10">
+        <div class="relative z-10 pt-10">
           <h2 class="text-4xl md:text-5xl font-bold mb-2 text-center">
-            <span class="text-primary font-custom">MEET</span> OUR
-            <span class="text-primary font-custom">TEAM</span>
+            <span class="text-biru font-custom text-7xl">MEET</span> <span class="font-medium">OUR</span>
+            <span class="text-biru font-custom text-7xl">TEAM</span>
           </h2>
           <p class="text-xl text-gray-600 mb-12 text-center">
             let's meet the great people who have made various interesting works.
@@ -114,7 +114,7 @@
               <img
                 src="/public/lana.png"
                 alt="Maulana Ahmad Zahiri"
-                class="w-48 h-48 rounded-full mb-4 object-cover"
+                class="w-50 h-50 rounded-full mb-4 object-cover"
               />
               <h3 class="text-xl font-semibold text-center">
                 Maulana Ahmad Zahiri
@@ -125,7 +125,7 @@
               <img
                 src="/public/afnan.png"
                 alt="Rafi Afnaan Fathurrahman"
-                class="w-48 h-48 rounded-full mb-4 object-cover"
+                class="w-50 h-50 rounded-full mb-4 object-cover"
               />
               <h3 class="text-xl font-semibold text-center">
                 Rafi Afnaan Fathurrahman
@@ -136,7 +136,7 @@
               <img
                 src="https://via.placeholder.com/150"
                 alt="Nayyara Ashila"
-                class="w-48 h-48 rounded-full mb-4 object-cover"
+                class="w-70 h-70 rounded-full mb-4 object-cover"
               />
               <h3 class="text-xl font-semibold text-center">Nayyara Ashila</h3>
               <p class="text-gray-600 text-center">5027231083</p>
@@ -145,7 +145,7 @@
               <img
                 src="https://via.placeholder.com/150"
                 alt="Dani Wahyu Anak Ary"
-                class="w-48 h-48 rounded-full mb-4 object-cover"
+                class="w-70 h-70 rounded-full mb-4 object-cover"
               />
               <h3 class="text-xl font-semibold text-center">
                 Dani Wahyu Anak Ary
@@ -158,17 +158,14 @@
       </section>
     </div>
 
-      <section id="project" class="mt-32 relative">
-        <div
-          class="absolute -top-20 -right-20 w-96 h-96 bg-blue-200 rounded-full opacity-50 z-0"
-        ></div>
-        <div class="relative z-10">
-          <h2 class="text-4xl md:text-5xl font-bold mb-2">
-            <span class="text-primary font-custom">Our</span> Activity.
-          </h2>
-          <p class="text-xl text-gray-600 mb-8">
-            This is our activity for the past year with eclipta
-          </p>
+    <section id="project" class="mt-32 relative pt-20"></section>
+    <div class="relative z-10 pt-10">
+      <h2 class="text-4xl md:text-5xl font-bold mb-2 text-center">
+        <span class="text-biru font-custom text-8xl">Our</span> <span class="font-medium">Activity.</span>
+      </h2>
+      <p class="text-xl text-gray-600 mb-12 text-center">
+        let's meet the great people who have made various interesting works.
+      </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <img
               src="/public/bms.png"
@@ -196,16 +193,17 @@
       </section>
 
     <section id="bms-project" class="mt-32 relative pt-20">
-      <div
+      <!-- <div
         class="absolute -top-40 -left-40 w-96 h-96 bg-blue-200 rounded-full opacity-50 z-0"
-      ></div>
+      ></div> -->
       <div class="relative z-10 pt-10">
         <h2 class="text-5xl font-bold mb-4 text-center">
-          <span class="text-primary font-custom">BMS</span> Project.
+          <span class="text-biru font-custom text-8xl hp:text-6xl">Our</span>
+          <span class="text-biru font-custom text-8xl hp:text-6xl">Respective</span>
+          <span class="font-medium">Work.</span>
         </h2>
         <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          starting from designing, web development, copywriting, and photography.
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="bg-white rounded-lg shadow-lg p-6">
@@ -278,72 +276,48 @@
     </section>
 
   </body>
-
-  <footer class="bg-gray-700 py-8 text-white mt-10 w-auto">
-    <div class="container mx-auto text-center">
+  <div class="container mx-auto text-center max-w-none">
+  <footer class="bg-ungu mx-auto py-8 text-white mt-10 px-5 w-full">
+    <div class="container mx-auto text-center px-0">
       <h2 class="text-2xl font-semibold mb-6">Follow Us</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Person 1 -->
         <div>
           <h3 class="text-xl font-bold mb-4">Maulana</h3>
-          <a
-            href="https://instagram.com/person1"
-            class="block mb-2 hover:text-gray-400"
-          >
+          <a href="https://instagram.com/maulanazahiri" class="block mb-2 hover:text-gray-400">
             <i class="fab fa-instagram"></i> Instagram
           </a>
-          <a
-            href="https://github.com/person1"
-            class="block hover:text-gray-400"
-          >
+          <a href="https://github.com/yolookings" class="block hover:text-gray-400">
             <i class="fab fa-github"></i> GitHub
           </a>
         </div>
         <!-- Person 2 -->
         <div>
           <h3 class="text-xl font-bold mb-4">Afnaan</h3>
-          <a
-            href="https://instagram.com/person2"
-            class="block mb-2 hover:text-gray-400"
-          >
+          <a href="https://instagram.com/person2" class="block mb-2 hover:text-gray-400">
             <i class="fab fa-instagram"></i> Instagram
           </a>
-          <a
-            href="https://github.com/person2"
-            class="block hover:text-gray-400"
-          >
+          <a href="https://github.com/person2" class="block hover:text-gray-400">
             <i class="fab fa-github"></i> GitHub
           </a>
         </div>
         <!-- Person 3 -->
         <div>
           <h3 class="text-xl font-bold mb-4">Nayyara</h3>
-          <a
-            href="https://instagram.com/person3"
-            class="block mb-2 hover:text-gray-400"
-          >
+          <a href="https://instagram.com/person3" class="block mb-2 hover:text-gray-400">
             <i class="fab fa-instagram"></i> Instagram
           </a>
-          <a
-            href="https://github.com/person3"
-            class="block hover:text-gray-400"
-          >
+          <a href="https://github.com/person3" class="block hover:text-gray-400">
             <i class="fab fa-github"></i> GitHub
           </a>
         </div>
         <!-- Person 4 -->
         <div>
           <h3 class="text-xl font-bold mb-4">Dani</h3>
-          <a
-            href="https://instagram.com/person4"
-            class="block mb-2 hover:text-gray-400"
-          >
+          <a href="https://instagram.com/person4" class="block mb-2 hover:text-gray-400">
             <i class="fab fa-instagram"></i> Instagram
           </a>
-          <a
-            href="https://github.com/person4"
-            class="block hover:text-gray-400"
-          >
+          <a href="https://github.com/person4" class="block hover:text-gray-400">
             <i class="fab fa-github"></i> GitHub
           </a>
         </div>
@@ -353,5 +327,5 @@
       </div>
     </div>
   </footer>
-
+  
 </html>
