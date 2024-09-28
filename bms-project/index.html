@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group 14 - Four People, One Vision</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2c5282",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-blue-100 to-yellow-100 min-h-screen">
+    <nav class="bg-primary rounded-full mx-auto mt-4 max-w-2xl px-6 py-3">
+      <ul class="flex justify-between">
+        <li>
+          <a
+            href="#home"
+            class="text-white px-4 py-2 rounded-full hover:bg-white hover:bg-opacity-20 transition-colors duration-300"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#team"
+            class="text-white px-4 py-2 rounded-full hover:bg-white hover:bg-opacity-20 transition-colors duration-300"
+            >Team</a
+          >
+        </li>
+        <li>
+          <a
+            href="#project"
+            class="text-white px-4 py-2 rounded-full hover:bg-white hover:bg-opacity-20 transition-colors duration-300"
+            >Project</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container mx-auto px-4">
+      <section
+        id="home"
+        class="flex flex-col md:flex-row items-center justify-between mt-16"
+      >
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h1 class="text-5xl md:text-6xl font-bold text-primary mb-2">
+            Group <span class="text-black">14.</span>
+          </h1>
+          <p class="text-2xl text-gray-600">Four People, One Vision</p>
+          <div class="w-3 h-3 bg-pink-500 rounded-full mt-2"></div>
+        </div>
+        <div class="md:w-1/2">
+          <img
+            src="https://via.placeholder.com/400"
+            alt="Group photo"
+            class="w-full h-auto rounded-lg shadow-lg"
+          />
+        </div>
+      </section>
+
+      <section id="project" class="mt-32 relative">
+        <div
+          class="absolute -top-20 -right-20 w-96 h-96 bg-blue-200 rounded-full opacity-50 z-0"
+        ></div>
+        <div class="relative z-10">
+          <h2 class="text-4xl md:text-5xl font-bold mb-2">
+            <span class="text-primary">Our</span> Activity.
+          </h2>
+          <p class="text-xl text-gray-600 mb-8">
+            This is our activity for the past year with eclipta
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Activity 1"
+              class="w-full h-64 object-cover rounded-lg shadow-md"
+            />
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Activity 2"
+              class="w-full h-64 object-cover rounded-lg shadow-md"
+            />
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Activity 3"
+              class="w-full h-64 object-cover rounded-lg shadow-md"
+            />
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Activity 4"
+              class="w-full h-64 object-cover rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="mt-32 relative">
+        <div
+          class="absolute -bottom-20 -right-20 w-96 h-96 bg-blue-200 rounded-full opacity-50 z-0"
+        ></div>
+        <div class="relative z-10">
+          <h2 class="text-4xl md:text-5xl font-bold mb-2 text-center">
+            <span class="text-primary">MEET</span> OUR
+            <span class="text-primary">TEAM</span>
+          </h2>
+          <p class="text-xl text-gray-600 mb-12 text-center">
+            let's meet the great people who have made various interesting works.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Maulana Ahmad Zahiri"
+                class="w-48 h-48 rounded-full mb-4 object-cover"
+              />
+              <h3 class="text-xl font-semibold text-center">
+                Maulana Ahmad Zahiri
+              </h3>
+              <p class="text-gray-600 text-center">5027231010</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Rafi Afnaan Fathurrahman"
+                class="w-48 h-48 rounded-full mb-4 object-cover"
+              />
+              <h3 class="text-xl font-semibold text-center">
+                Rafi Afnaan Fathurrahman
+              </h3>
+              <p class="text-gray-600 text-center">5027231040</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Nayyara Ashila"
+                class="w-48 h-48 rounded-full mb-4 object-cover"
+              />
+              <h3 class="text-xl font-semibold text-center">Nayyara Ashila</h3>
+              <p class="text-gray-600 text-center">5027231083</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Dani Wahyu Anak Ary"
+                class="w-48 h-48 rounded-full mb-4 object-cover"
+              />
+              <h3 class="text-xl font-semibold text-center">
+                Dani Wahyu Anak Ary
+              </h3>
+              <p class="text-gray-600 text-center">5027231038</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="bms-project" class="mt-32 relative">
+      <div
+        class="absolute -top-40 -left-40 w-96 h-96 bg-blue-200 rounded-full opacity-50 z-0"
+      ></div>
+      <div class="relative z-10">
+        <h2 class="text-5xl font-bold mb-4 text-center">
+          <span class="text-primary">BMS</span> Project.
+        </h2>
+        <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Project Screenshot"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Maulana Ahmad Zahiri</h3>
+            <p class="mb-2">
+              Website:
+              <a href="#" class="text-primary hover:underline">Click here</a>
+            </p>
+            <p>
+              Copywriting:
+              <a href="#" class="text-primary hover:underline">Click here</a>
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Project Screenshot"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Maulana Ahmad Zahiri</h3>
+            <p class="mb-2">
+              Website:
+              <a href="#" class="text-primary hover:underline">Click here</a>
+            </p>
+            <p>
+              Copywriting:
+              <a href="#" class="text-primary hover:underline">Click here</a>
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Project Screenshot"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Maulana Ahmad Zahiri</h3>
+            <p class="mb-2">
+              Website:
+              <a href="#" class="text-primary hover:underline">Click here</a>
+            </p>
+            <p>
+              Copywriting:
+              <a href="#" class="text-primary hover:underline">Click here</a>
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Project Screenshot"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Maulana Ahmad Zahiri</h3>
+            <p class="mb-2">
+              Website:
+              <a href="#" class="text-primary hover:underline">Click here</a>
+            </p>
+            <p>
+              Copywriting:
+              <a href="#" class="text-primary hover:underline">Click here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="h-32"></div>
+  </body>
+</html>
